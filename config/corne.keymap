@@ -9,8 +9,17 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-        keymap {
-                compatible = "zmk,keymap";
+
+  combos {
+    compatible = "zmk,combos";
+
+    tab {
+      bindings = <&kp LA(TAB)>;
+      key-positions = <0 38>;
+    };
+    
+   keymap {
+     compatible = "zmk,keymap";
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
