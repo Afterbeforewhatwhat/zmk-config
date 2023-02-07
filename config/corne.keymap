@@ -13,11 +13,13 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp LA(TAB)>;
-            key-positions = <0 38>;
+    tab {
+      bindings = <&kp LA(TAB)>;
+      key-positions = <0 38>;
+      timeout-ms = <50>;
+      slow-release;
     };
-  }; 
+  };
     
     
     
