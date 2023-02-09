@@ -9,7 +9,26 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-    
+    combos {
+    compatible = "zmk,combos";
+
+    esc {
+      bindings = <&kp LA(ESC)>;
+      key-positions = <0 1>;
+      timeout-ms = <50>;
+      slow-release;
+    };
+
+    ctrlBackspace {
+      bindings = <&kp LC(BACKSPACE)>;
+      key-positions = <22 21>;
+    };
+
+    enter {
+      bindings = <&trans>;
+      key-positions = <22 21>;
+    };
+  };
     
    keymap {
      compatible = "zmk,keymap";
