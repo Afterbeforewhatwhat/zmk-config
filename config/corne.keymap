@@ -62,14 +62,14 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |      |  !  |  @  |  #  |  $  |  %  |            |  ^  |  &  |MUTE |VOLDN|VOLUP|      |
-// |      |     |     |     |     |EPTOG|            |  -  |  =  |  [  |  ]  |  \  |  `   |
-// |      | BT1 | BT2 | BT3 | BT4 |BTCLR|            |  _  |  +  |  {  |  }  | "|" |  ~   |
+// |      |     |     |     |     |     |            |     |     |MUTE |VOLDN|VOLUP|      |
+// |      |     |     |     |     |     |            |  -  |  =  |  [  |  ]  |  \  |      |
+// |      | BT1 | BT2 | BT3 | BT4 |BTCLR|            |  _  |  +  |  {  |  }  | "|" |      |
 //                    | GUI |     | SPC |            | ENT |     |    |
                         bindings = <
    &none  &trans        &trans        &trans        &trans        &trans              &trans    &trans    &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none
-   &none  &trans        &trans        &trans        &trans        &trans              &kp MINUS &kp EQUAL &kp LBKT   &kp RBKT     &kp BSLH     &none
-   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR          &kp UNDER &kp PLUS  &kp LBRC   &kp RBRC     &kp PIPE     &none
+   &none  &trans        &trans        &trans        &trans        &bt BT_CLR          &kp MINUS &kp EQUAL &kp LBKT   &kp RBKT     &kp BSLH     &none
+   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4        &kp UNDER &kp PLUS  &kp LBRC   &kp RBRC     &kp PIPE     &none
                     	     &kp LGUI &trans   &kp SPACE                              &trans       &trans    &trans
                         >;
                 };
