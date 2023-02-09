@@ -63,8 +63,8 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |      |     |     |     |     |     |            |     |     |MUTE |VOLDN|VOLUP|      |
-// |      |     |     |     |     |     |            |  -  |  =  |  [  |  ]  |  \  |      |
-// |      | BT1 | BT2 | BT3 | BT4 |BTCLR|            |  _  |  +  |  {  |  }  | "|" |      |
+// |      |     |     |     |     |BTCLR|            |  -  |  =  |  [  |  ]  |  \  |      |
+// |      | BT1 | BT2 | BT3 | BT4 | BT5 |            |  _  |  +  |  {  |  }  | "|" |      |
 //                    | GUI |     | SPC |            | ENT |     |    |
                         bindings = <
    &none  &trans        &trans        &trans        &trans        &trans              &trans    &trans    &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none
