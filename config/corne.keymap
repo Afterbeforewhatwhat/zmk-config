@@ -15,18 +15,24 @@
     esc {
       bindings = <&kp ESC>;
       key-positions = <1 2>;
-      timeout-ms = <50>;
-      slow-release;
+      timeout-ms = <20>;
     };
-    
-    tab {
-      bindings = <&kp TAB>;
-      key-positions = <13 14>;
-    };
-    
+
     enter {
       bindings = <&kp ENTER>;
       key-positions = <22 21>;
+      timeout-ms = <20>;
+    };
+
+    tab {
+      bindings = <&kp TAB>;
+      key-positions = <14 13>;
+      timeout-ms = <20>;
+    };
+
+    alttab {
+      bindings = <&kp LA(TAB)>;
+      key-positions = <37 13>;
     };
   };
     
