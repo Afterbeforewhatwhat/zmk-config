@@ -51,26 +51,26 @@
 // |      |     |  1  |  2  |  3  |  *  |            |     |     |     |     |     |      |
 // |      |  +  |  4  |  5  |  6  |  /  |            |     |     |     |     |     |      |
 // |      |  -  |  7  |  8  |  9  |  0  |            |     |     |     |     |     |      |
-//                    |     |     |     |            |     |     |     |
+//                    |     |     |     |            |     | LY3 |     |
                         bindings = <
    &none  &trans     &kp N1  &kp N2  &kp N3  &kp KP_MULTIPLY    &trans   &trans   &trans  &trans  &trans &none
    &none  &kp PLUS   &kp N4  &kp N5  &kp N6  &kp KP_SLASH       &trans   &trans   &trans  &trans  &trans &none
    &none  &kp MINUS  &kp N7  &kp N8  &kp N9  &kp N0             &trans   &trans   &trans  &trans  &trans &none
-                             &kp N0  &trans  &trans             &trans   &trans   &trans
+                             &trans  &trans  &trans             &trans   &mo 3    &trans
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |      |     |     |     |     |     |            |     |     |MUTE |VOLDN|VOLUP|      |
-// |      |     |     |     |     |BTCLR|            |  -  |  =  |  [  |  ]  |  \  |      |
-// |      | BT1 | BT2 | BT3 | BT4 | BT5 |            |  _  |  +  |  {  |  }  | "|" |      |
-//                    | GUI |     | SPC |            | ENT |     |    |
+// |      |     |     |     |     |     |            |     |MUTE |  ↑  |VOLDN|VOLUP|      |
+// |      |     |     |     |     |BTCLR|            |     |  ←  |  ↓  |  →  |     |      |
+// |      | BT1 | BT2 | BT3 | BT4 | BT5 |            |     |     |     |     |     |      |
+//                    |     |     |     |            |     |     |     |
                         bindings = <
-   &none  &trans        &trans        &trans        &trans        &trans              &trans    &trans    &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none
-   &none  &trans        &trans        &trans        &trans        &bt BT_CLR          &kp MINUS &kp EQUAL &kp LBKT   &kp RBKT     &kp BSLH     &none
-   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4        &kp UNDER &kp PLUS  &kp LBRC   &kp RBRC     &kp PIPE     &none
-                    	     &kp LGUI &trans   &kp SPACE                              &trans       &trans    &trans
+   &none  &trans        &trans        &trans        &trans        &trans              &trans  &kp C_MUTE  &kp UP    &kp C_VOL_DN  &kp C_VOL_UP &none
+   &none  &trans        &trans        &trans        &trans        &bt BT_CLR          &trans  &kp LEFT    &kp DOWN  &kp RIGHT     &trans       &none
+   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4        &trans  &trans      &trans    &trans        &trans       &none
+                    	              &trans        &mo 3         &trans              &trans  &trans      &trans
                         >;
                 };
         };
