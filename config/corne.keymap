@@ -41,15 +41,15 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |      |  Q  |  W  |  F  |  P  |  B  |            |  J  |  L   |  U  |  Y  | BSPC|      |
-// |      |  A  |  R  |  S  |  T  |  G  |            |  K  |  N   |  E  |  I  |  O  |      |
-// |      |  Z  |  X  |  D  |  C  |  V  |            |  M  |  H   |  ,  |  .  |RCTRL|      |
-//                    | GUI | LWR | BSPC|            | SPC | SPC  | RSE |
+// |     |  Q  |  W  |  F  |  P  |  B  |            |  J  |  L  |  U  |  Y  | DEL |     |
+// |     |  A  |  R  |  S  |  T  |  G  |            |  K  |  N  |  E  |  I  |  O  |     |
+// |     |  Z  |  X  |  D  |  C  |  V  |            |  M  |  H  |  ,  |  .  |RCTRL|     |
+//                   | GUI | LWR | BSPC|            |RSHFT| SPC | RSE |
                         bindings = <
-   &none  &kp Q &kp W &kp F &kp P &kp B              &kp J     &kp L     &kp U      &kp Y   &kp BACKSPACE &none
-   &none  &kp A &kp R &kp S &kp T &kp G              &kp K     &kp N     &kp E      &kp I   &kp O         &none
-   &none  &kp Z &kp X &kp D &kp C &kp V              &kp M     &kp H     &kp COMMA  &kp DOT &kp RCTRL     &none
-               &kp LGUI &mo 1 &kp BACKSPACE          &kp SPACE &kp SPACE &mo 2
+   &none  &kp Q &kp W &kp F &kp P &kp B              &kp J     &kp L     &kp U      &kp Y   &kp DELETE  &none
+   &none  &kp A &kp R &kp S &kp T &kp G              &kp K     &kp N     &kp E      &kp I   &kp O       &none
+   &none  &kp Z &kp X &kp D &kp C &kp V              &kp M     &kp H     &kp COMMA  &kp DOT &kp RCTRL   &none
+               &kp LGUI &mo 1 &kp BACKSPACE          &kp RSHIFT &kp SPACE &mo 2
                         >;
                 };
                 lower_layer {
@@ -69,12 +69,12 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |      |     |     |     |     |     |            |     |MUTE |  ↑  |VOLDN|VOLUP|      |
-// |      |     |     |     |     |BTCLR|            |     |  ←  |  ↓  |  →  |     |      |
+// |      |     |     |     |     |BTCLR|            |     |  ←  |  ↓  |  →  |ENTER|      |
 // |      | BT1 | BT2 | BT3 | BT4 | BT5 |            |     |     |     |     |     |      |
-//                    |     |     |     |            |     |     |     |
+//                    |     | LY3 |     |            |     |     |     |
                         bindings = <
    &none  &trans        &trans        &trans        &trans        &trans              &trans  &kp C_MUTE  &kp UP    &kp C_VOL_DN  &kp C_VOL_UP &none
-   &none  &trans        &trans        &trans        &trans        &bt BT_CLR          &trans  &kp LEFT    &kp DOWN  &kp RIGHT     &trans       &none
+   &none  &trans        &trans        &trans        &trans        &bt BT_CLR          &trans  &kp LEFT    &kp DOWN  &kp RIGHT     &kp ENTER    &none
    &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4        &trans  &trans      &trans    &trans        &trans       &none
                     	              &trans        &mo 3         &trans              &trans  &trans      &trans
                         >;
