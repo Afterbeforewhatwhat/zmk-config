@@ -24,7 +24,7 @@
             bindings = <
 &kp ESCAPE      &kp Q  &kp W  &kp F             &kp P      &kp B        &kp J       &kp L  &kp U      &kp Y    &kp BACKSPACE  &kp BACKSPACE
 &kp TAB         &kp A  &kp R  &kp S             &kp T      &kp G        &kp K       &kp N  &kp E      &kp I    &kp O          &kp ENTER
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp D             &kp C      &kp V        &kp M       &kp H  &kp COMMA  &kp DOT  &kp SLASH      &kp ESC
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp D             &kp C      &kp V        &kp M       &kp H  &kp COMMA  &kp DOT  &kp SLASH      &kp MINUS
                               &kp LEFT_CONTROL  &kp SPACE  &kp SPACE    &kp RSHIFT  &mo 1  &mo 2
             >;
         };
